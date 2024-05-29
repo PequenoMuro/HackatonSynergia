@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <style>
+
+ .navbar.custom{
+
+        
+        border-color: none;
+        background-color:#8DDE92;    
+        box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+        height:75px;
+          }
+
+          body {
+ 
+    background-image: url(fundoLoginCadastro.png); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+     min-height: 65vh;
+    
+  justify-content: center;
+  }
+  button{
+  
+  background-color: #8DDE92;
+  border: none;
+  border-radius: 50px;
+  width: 150px;
+  height: 45px;
+  color: white;
+  margin-left: 115px;
+  font-size: 18px;
+  
+  }
+  
+  .btne2{
+       margin-top: 30px; 
+       margin-left: auto;
+       padding-right: 115px;
+  
+  
+  }
+  .btnc2{
+       margin-top: 30px; 
+       margin-left: auto;
+       padding-right: 115px;
+  
+  
+  }
+  
+  .btn1{
+      margin-top: 650px;
+  }
+  
+  
+  
+  .input input{
+      width: 200px;
+      height: 25px;
+      margin: 5px;
+      border: 2px solid #8DDE92;
+      border-radius: 5px;
+  }
+  
+  .perfil{
+      margin-top: 470px;
+      font-size: 24px;
+  }
+  
+      .conteudo{
+          border: 1px solid rgb(34, 34, 34);
+          border-radius:50px;
+           height:40px;
+           padding:3px;
+           width:100%;
+           color:gray;
+           font-size:16px;
+           box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+         
+      }
+  
+  .sair {
+      width: 20px;
+      height: 20px;
+      
+      }
+      
+      .sair img{
+          width: 45px;
+          height: 45px;
+          margin-left: 335px;
+          margin-top: 7px;
+      }
+  
+      .editar {
+          margin-bottom: 20px;
+      }
+
+      .buttonSalvar {
+
+ font-size: 14px;
+height:55px;
+ border: 3px solid #8DDE92;
+background: #8DDE92;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:100%
+}
+
+.buttonSalvar:active {
+
+ font-size: 14px;
+height:53px;
+ border: 2px solid #8DDE92;
+background: #6ba56f;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:100%;
+}
+
+ .buttonDeslogar {
+
+ font-size: 14px;
+height:55px;
+ border: 3px solid #8DDE92;
+background: #8DDE92;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:100%
+}
+
+.buttonDeslogar:active {
+
+ font-size: 14px;
+height:53px;
+ border: 2px solid #8DDE92;
+background: #d2d2d2;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:100%;
+}
+
+.inputEmail {
+ width: 95%;
+margin-left:15px;
+  height: 50px;
+  line-height: 28px;
+  padding: 0 20rem;
+  padding-left: 2.5rem;
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 50px;
+  outline: none;
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+}
+.inputEmail::placeholder
+ {
+     background: url('navbarIcons/email.png') no-repeat left center;
+     background-size: 30px 30px;
+     padding-left: 40px;
+     color:rgb(34, 34, 34);
+     -webkit-text-stroke: 0.2px rgb(34, 34, 34);
+font-size:15px;
+}
+
+.inputSenha {
+ width: 95%;
+margin-left:15px;
+  height: 50px;
+  line-height: 28px;
+  padding: 0 20rem;
+  padding-left: 2.5rem;
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 50px;
+  outline: none;
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+}
+.inputSenha::placeholder
+ {
+     background: url('navbarIcons/senha.png') no-repeat left center;
+     background-size: 20px 20px;
+     padding-left: 40px;
+     color:rgb(34, 34, 34);
+     -webkit-text-stroke: 0.2px rgb(34, 34, 34);
+font-size:15px;
+}
+
+.inputNome {
+ width: 95%;
+margin-left:15px;
+  height: 50px;
+  line-height: 28px;
+  padding: 0 20rem;
+  padding-left: 2.5rem;
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 50px;
+  outline: none;
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+}
+.inputNome::placeholder
+ {
+     background: url('navbarIcons/nome.png') no-repeat left center;
+     background-size: 20px 20px;
+     padding-left: 40px;
+     color:rgb(34, 34, 34);
+     -webkit-text-stroke: 0.2px rgb(34, 34, 34);
+font-size:15px;
+}
+
+
+
+
+
+          </style>
+          <script>
+
+              function cadastrar() {
+// Pegando os valores dos campos de entrada
+var nomeUsuario = document.getElementById('nomeUsuario').value;
+var email = document.getElementById('email').value;
+var senha = document.getElementById('senha').value;
+// Verificando se os campos estão preenchidos
+if (nomeUsuario === '') {
+document.getElementById('nomeUsuarioSpam').innerText = 'Preencha esse campo';
+return;
+} else {
+document.getElementById('nomeUsuarioSpam').innerText = '';
+}
+if (email === '') {
+document.getElementById('emailSpam').innerText = 'Preencha esse campo';
+return;
+} else {
+document.getElementById('emailSpam').innerText = '';
+}
+if (senha === '') {
+document.getElementById('senhaSpam').innerText = 'Preencha esse campo';
+return;
+} else {
+document.getElementById('senhaSpam').innerText = '';
+}
+// Armazenando os dados (aqui você pode fazer o que quiser com os dados, como enviar para o servidor, etc.)
+var dados = {
+nomeUsuario: nomeUsuario,
+email: email,
+senha: senha
+};
+// Exemplo: armazenando os dados no localStorage
+localStorage.setItem('dadosUsuario', JSON.stringify(dados));
+// Exemplo: redirecionando para outra página após o cadastro
+window.location.href = 'entrar.html';
+}
+              </script>
+</head>
+<body>
+
+<div class="dados" style="box-shadow: 0px -10px 15px -12px rgba(0, 0, 0, 0.3);max-width:100%;border:1px solid transparent;border-radius:50px;background-color:white;margin-top:87%;height:350px">
+    <div class="dados" style="max-width:90%;border:1px solid transparent;margin-top:10%;margin-left:5%">
+
+<center>
+<label style="font-size:23px;text-decoration:bold;-webkit-text-stroke: 0.6px black">Cadastrar</label>
+</center>
+<br>
+<br>
+<input type="text" placeholder="Nome " class="inputNome">
+<br>
+<br>
+<br>
+<input type="text" id="email" placeholder="Email" class="inputEmail">
+   <br>
+   <br>
+<br>
+<input type="password" placeholder="Senha" class="inputSenha">
+   <br>
+   <br>
+
+   <center>
+<label style="font-size:12px;text-decoration:bold;-webkit-text-stroke: 0.3px gray;color:gray">Ja possui uma Conta? <a href="telaLogin.html" style="color:rgb(51, 51, 51)"> Login</label>
+</center>
+   <br>
+   <br>
+   <br>
+      <button class="buttonDeslogar" style="margin-left:1%" onclick="cadastrar()">
+<span style="color:white;"><b>Cadastrar-se</b></span>
+</button>
+   </a>
+   <br>
+   <br>
+  
+   
+   <hr style="margin-top:10%; border: 1px solid rgb(51, 51, 51);" >
+   
+ 
+   <br>
+   <center>
+<label style="font-size:12px;text-decoration:bold;-webkit-text-stroke: 0.1px gray;color:gray">Precisa de Ajuda?</label>
+</center>
+</center>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

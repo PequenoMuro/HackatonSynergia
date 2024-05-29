@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <style>
+
+ .navbar.custom{
+
+        
+        border-color: none;
+        background-color:#8DDE92;    
+        box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+        height:75px;
+          }
+
+          .group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.icon:active{
+    border-radius:40px;
+    background-color:#6ba56f;
+}
+
+.input {
+  width: 99%;
+  margin-left:0%;
+  height: 50px;
+  line-height: 28px;
+  padding: 0 20rem;
+  padding-left: 2.5rem;
+  border: 2px solid black;
+  border-radius: 50px;
+  outline: none;
+  background-color: white;
+  color: #0d0c22;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+  font-size: 15px;
+  margin-left:25%;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: #8DDE92;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+}
+
+.icon {
+  position: absolute;
+  margin-left:85%;
+   margin-right:6%;
+  left: 1rem;
+  fill: green;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.btnIr:active{
+
+background: linear-gradient(to right,#912200,#b2821b);
+
+}
+
+.select-card {
+  width: 32%;
+  height: 140px;
+  background: white;
+  border: 1px solid black;
+  border-radius:10px;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+             
+             background-repeat: no-repeat;
+             background-size: 40% auto;
+             background-position: bottom left;
+}
+
+.card {
+  width: 98%;
+  height: 140px;
+  background: white;
+  border: 1px solid black;
+  border-radius:7px;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+             
+             background-repeat: no-repeat;
+             background-size: 40% auto;
+             background-position: bottom left;
+}
+.card:active {
+  width: 97%;
+  height: 136px;
+  background: #d2d2d2;
+  border: 1px solid black;
+  border-radius:7px;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+             
+             background-repeat: no-repeat;
+             background-size: 40% auto;
+             background-position: bottom left;
+}
+
+
+.label-container {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: bold;
+      -webkit-text-stroke: 0.6px black;
+    }
+    .label-container img {
+      margin-left: 
+    }
+
+          
+
+
+      </style>
+</head>
+<body>
+
+    <br>
+    <br>
+<div style="border: 1px solid transparent;max-width:91%;margin-left:5%">
+
+<label style="font-size:33px;text-decoration:bold;-webkit-text-stroke: 0.6px black">Últimas Atualizações  Mongaguá</label>
+<br>
+<br>
+<br>
+<br>
+<center>
+<div class="group">
+  <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+    <g>
+      <path
+        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+      ></path>
+    </g>
+  </svg>
+  <input class="input" type="search" placeholder="Search" />
+</div>
+</center>
+<br>
+<br>
+<br>
+<label style="font-size:30px;text-decoration:bold;-webkit-text-stroke: 0.6px black">Filtrar Por:</label>
+ <div style="display: flex; justify-content: center; padding: 10px;">
+
+     <div class="card select-card"  style="margin-right:3%;">
+         <br>
+         <br>
+         <br>
+         <center>
+       <a href="filtroConstrucao.html"><img src="filtrosdeBusca/obras.png" height="40px" width="40px"></a>
+         <br>
+         <br>
+         <h5 style="color:#989494"> Obras</h5>
+         </center>
+
+     </div>
+
+      <div class="card select-card" style="margin-right:3%">
+ <br>
+         <br>
+         <br>
+         <center>
+         <a href="filtroAcidentes.html"> <img src="filtrosdeBusca/acidentes.png" height="40px" width="40px"></a>
+         <br>
+         <br>
+         
+         <h5 style="color:#989494"> Acidentes</h5>
+         </center>
+
+     </div>
+
+      <div class="card select-card" style="margin-right:3%;border:none;background-color:#8DDE92">
+ <br>
+ <br>
+         <br>
+         <center>
+
+        <a href="telaCidade.html" ><img src="filtrosdeBusca/eventosClimaticos(selected).png" height="40px" width="40px"></a>
+         <h5 style="color:white"> Eventos</h5>
+           <h5 style="color:white"> climáticos</h5>
+         </center>
+
+     </div>
+
+      <div class="card select-card">
+ <br>
+ <br>
+         <br>
+         <center>
+         <a href="filtroCriminalidade.html"> <img src="filtrosdeBusca/Criminalidade.png" height="40px" width="40px"> </a>
+         <br>
+         <br>
+         <h6 style="color:#989494"> Criminalidade</h6>
+         </center>
+
+     </div>
+
+
+</div>
+<br>
+<br>
+<label style="font-size:25px;text-decoration:bold;-webkit-text-stroke: 0.6px black">Eventos Climáticos:</label>
+<br>
+<br>
+
+
+
+
+
+
+<div class="card" style="background-image: url('Noticias/clima3.jpg');">
+<div style="border: 1px solid transparent;max-width:60%;margin-left:42%;height:91%;margin-top:2%">
+
+    <label style="font-size:14px;text-decoration:bold;-webkit-text-stroke: 0.6px black">Alagamento Atrapalha Passagem</label>
+    <p> Perante Fortes Chuvas a rua Marcelino Santos está em Alagamento bloqueando passagem de carros e pedrestres </p>
+    <label class="label-container"> Local: &nbsp;
+    <img src="navbarIcons/localizacao.png" width="25px" height="25px">
+  </label>
+    
+
+</div>
+</div>
+<br>
+
+<div class="card" style="background-image: url('Noticias/clima2.jpg');">
+<div style="border: 1px solid transparent;max-width:60%;margin-left:42%;height:91%;margin-top:2%">
+
+    <label style="font-size:15px;text-decoration:bold;-webkit-text-stroke: 0.6px black">Ventania Derruba Teclhado de Moradora</label>
+    <p> A Moradora Elma Ferreira, teve seu teclhado derrubado por conta da forte Ventania no Regina Maria</p>
+  
+  </label>
+    
+
+</div>
+</div>
+<br>
+
+<div class="card" style="background-image: url('Noticias/clima4.jpg');">
+<div style="border: 1px solid transparent;max-width:60%;margin-left:42%;height:91%;margin-top:2%">
+
+    <label style="font-size:14px;text-decoration:bold;-webkit-text-stroke: 0.6px black">Alagamento Intenso no Regina</label>
+    <p> O bairro Regina Maria esta com sérios problemas de Alagamento perante as chuvas Impedindo Passagens de Carros e Pedrestres </p>
+    <label class="label-container"> Local: &nbsp;
+    <img src="navbarIcons/localizacao.png" width="25px" height="25px">
+  </label>
+    
+
+</div>
+</div>
+<br>
+
+
+<div class="card" style="background-image: url('Noticias/clima1.jpeg');">
+<div style="border: 1px solid transparent;max-width:60%;margin-left:42%;height:91%;margin-top:2%">
+
+    <label style="font-size:15px;text-decoration:bold;-webkit-text-stroke: 0.6px black">Partes de Uma Obra São Levadas em ventania</label>
+    <p> Durante a Ventania, Algumas partes de obra q estavam acontecendo no local São levadas bloqueando caminho </p>
+    <label class="label-container"> Local: &nbsp;
+    <img src="navbarIcons/localizacao.png" width="25px" height="25px">
+  </label>
+    
+
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</div>
+
+
+
+
+    
+ <nav style="border-radius: 0px; box-shadow: 0px 15px 30px -12px rgba(0, 0, 0, 0.3), 5px -5px 30px -12px rgba(0, 0, 0, 0.3);height:60px;position: fixed; bottom: 10;margin: 0; padding: 0;border-radius:7px" class="navbar navbar-default custom fixed-bottom">
+    <div style="display: flex; justify-content: center; padding: 10px;">
+
+        
+        <a href="telaCidade.html" style="margin-right:50%"> <img  src="navbarIcons/Cidade.png" width="30px" height="30px"></a>
+      <a href="telaOpnioes.html" style="margin-right:50%"> <img  src="navbarIcons/reclamacoes.png" width="30px" height="30px"></a>
+         <a href="telaReport.html" style="margin-right:50%"> <img  src="navbarIcons/reportar.png" width="30px" height="30px"></a>
+         <a href="telaProfile.html" > <img  src="navbarIcons/profile.png" width="28px" height="28px"></a>
+       
+    </div>
+</nav>
+
+   
+</body>
+</html>

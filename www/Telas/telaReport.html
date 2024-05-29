@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+.navbar.custom-cima{
+
+        box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+        border-color: none;
+        background-color:#8DDE92;    
+        border-radius:50px;
+        height:100px;
+          }
+
+          .navbar.custom{
+
+        
+        border-color: none;
+        background-color:#8DDE92;    
+        box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+        height:75px;
+          }
+
+           .group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 99%;
+  margin-left:0%;
+  height: 50px;
+  line-height: 28px;
+  padding: 0 20rem;
+  padding-left: 2.5rem;
+  border: 1px solid white;
+  border-radius: 50px;
+  outline: none;
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+}
+
+.descricao {
+ width: 99%;
+  margin-right:-2%;
+  height: 100px;
+  line-height: 28px;
+  padding: 0 20rem;
+  padding-left: 2.5rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  outline: none;
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+}
+
+.descricao::placeholder
+ {
+ text-align: left;
+  margin-bottom:100px;
+}
+
+
+
+.selectBairros{
+  width: 99%;
+  margin-right:-2%;
+  height: 50px;
+  line-height: 28px;
+  padding: 0 20rem;
+  padding-left: 2.5rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  outline: none;
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+}
+
+.selectBairros::placeholder {
+    margin-right:10%;
+ color:white;
+  font-size: 30px;
+}
+
+.input::placeholder {
+  color:gray;
+  font-size: 15px;
+ 
+}
+
+.input:focus,
+ {
+  outline: none;
+  border-color: #8DDE92;
+  background-color: #8DDE92;
+  box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+  font-size:12px;
+  color:white;
+}
+
+.icon {
+  position: absolute;
+  margin-left:85%;
+   margin-right:6%;
+  left: 1rem;
+  fill: green;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.button {
+
+ font-size: 14px;
+height:55px;
+ border: 2px solid black;
+background: white;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:190px;
+}
+
+.button:active {
+
+ font-size: 14px;
+height:53px;
+ border: 2px solid black;
+background: #d2d2d2;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:186px;
+}
+
+.buttonCancelar {
+
+ font-size: 14px;
+height:55px;
+ border: 2px solid #8DDE92;
+background: white;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:190px;
+}
+
+.buttonEnviar {
+
+ font-size: 14px;
+height:55px;
+ border: 2px solid #8DDE92;
+background: #8DDE92;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:190px;
+}
+
+.buttonCancelar:active {
+
+ font-size: 14px;
+height:53px;
+ border: 2px solid #8DDE92;
+background: #d2d2d2;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:186px;
+}
+
+.buttonEnviar:active {
+
+ font-size: 14px;
+height:53px;
+ border: 2px solid #8DDE92;
+background: #6ba56f;
+ border-radius:50px;
+ transition: all 0.1s linear;
+box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.3);
+ width:186px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+        <nav style=" height:250px;margin: 0; padding: 0;border-radius:30px" class="navbar navbar-default custom-cima fixed-top">
+            <div style="border: 1px solid transparent;max-width:99%;margin-left:-6%">
+                <center>
+                <label style="font-size:20px;color:white">Report</label>
+                <hr style="margin-left:9%;color:white;border:2px solid white">
+                </center>
+                <br>
+                <br>
+                <label style="font-size:25px;text-decoration:bold;-webkit-text-stroke: 0.1px white;color:white">Insira o Endereço:</label>
+                <br>
+                <br>
+                <div class="group">
+ 
+  <input class="input" type="search" placeholder="Rua, Pont Ref" />
+</div>
+
+            </div>
+            
+    
+</nav>
+
+<div style="border: 1px solid transparent;max-width:91%;margin-left:5%;margin-top:65%">
+<label style="font-size:20px;text-decoration:bold;-webkit-text-stroke: 0.5px black">Tipo de Problema:</label>
+<br>
+ <div style="display: flex; justify-content: center; padding: 10px;">
+
+      <a href="telaReport.html"> <button class="button" style="margin-right:20px">
+<span style="color:black;"><b>Acidente</b></span>
+</button>
+   </a>
+
+   <a href="telaReport.html"> <button class="button" style="">
+<span style="color:black;"><b>Obras</b></span>
+</button>
+   </a>
+
+ </div>
+  <div style="display: flex; justify-content: center; padding: 10px;">
+
+      <a href="telaReport.html"> <button class="button" style="margin-right:20px">
+<span style="color:black;"><b>Evento Climatico</b></span>
+</button>
+   </a>
+
+   <a href="telaReport.html"> <button class="button" style="">
+<span style="color:black;"><b>Crime</b></span>
+</button>
+   </a>
+ </div>
+ <br>
+ <br>
+ <label style="font-size:20px;text-decoration:bold;-webkit-text-stroke: 0.5px black"> &nbsp; Bairro:</label>
+<br>
+<br>
+<div class="group">
+ 
+ <select id="bairros" class="selectBairros" name="bairros" style="margin-right:4%">
+    <option value="agenor-de-campos">Agenor de Campos</option>
+    <option value="balneario-america">Balneário América</option>
+    <option value="balneario-arara-vermelha">Balneário Arara Vermelha</option>
+    <option value="balneario-arena">Balneário Arena</option>
+    <option value="balneario-florida-mirim">Balneário Flórida Mirim</option>
+    <option value="balneario-itaguai">Balneário Itaguaí</option>
+    <option value="balneario-jussara">Balneário Jussara</option>
+    <option value="balneario-marina">Balneário Marina</option>
+    <option value="balneario-nossa-senhora-de-fatima">Balneário Nossa Senhora de Fátima</option>
+    <option value="balneario-plataforma">Balneário Plataforma</option>
+    <option value="balneario-regina-maria">Balneário Regina Maria</option>
+    <option value="balneario-sao-jorge">Balneário São Jorge</option>
+    <option value="balneario-tres-marias">Balneário Três Marias</option>
+    <option value="centro">Centro</option>
+    <option value="jardim-aguapeu">Jardim Aguapeú</option>
+    <option value="jardim-praia-grande">Jardim Praia Grande</option>
+    <option value="jardim-sao-francisco">Jardim São Francisco</option>
+    <option value="jardim-sao-gabriel">Jardim São Gabriel</option>
+    <option value="jardim-sao-paulo">Jardim São Paulo</option>
+    <option value="jardim-santana">Jardim Santana</option>
+    <option value="jardim-tejereba">Jardim Tejereba</option>
+    <option value="parque-do-trevo">Parque do Trevo</option>
+    <option value="pedreira">Pedreira</option>
+    <option value="vera-cruz">Vera Cruz</option>
+  </select>
+</div>
+<br>
+ <br>
+ <br>
+ <label style="font-size:20px;text-decoration:bold;-webkit-text-stroke: 0.5px black"> &nbsp; Descrição:</label>
+<br>
+<br>
+<input type="text" class="descricao" placeholder="Descreva o Problema">
+<br>
+<br>
+<div style="display: flex; justify-content: center; padding: 10px;">
+
+      <a href="telaReport.html"> <button class="buttonCancelar" style="margin-right:20px">
+<span style="color:#8DDE92;"><b>Cancelar</b></span>
+</button>
+   </a>
+
+   <a href="reportEnviado.html"> <button class="buttonEnviar" style="">
+<span style="color:White;"><b>Enviar</b></span>
+</button>
+   </a>
+<br>
+<br>
+ </div>
+ </div>
+ 
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+ <nav style="border-radius: 0px; box-shadow: 0px 15px 30px -12px rgba(0, 0, 0, 0.3), 5px -5px 30px -12px rgba(0, 0, 0, 0.3);height:60px;position: fixed; bottom: 10;margin: 0; padding: 0;border-radius:7px" class="navbar navbar-default custom fixed-bottom">
+    <div style="display: flex; justify-content: center; padding: 10px;">
+
+        
+        <a href="telaCidade.html" style="margin-right:50%"> <img  src="navbarIcons/Cidade.png" width="30px" height="30px"></a>
+      <a href="telaOpnioes.html" style="margin-right:50%"> <img  src="navbarIcons/reclamacoes.png" width="30px" height="30px"></a>
+         <a href="telaReport.html" style="margin-right:50%"> <img  src="navbarIcons/reportar.png" width="30px" height="30px"></a>
+         <a href="telaProfile.html" > <img  src="navbarIcons/profile.png" width="28px" height="28px"></a>
+       
+    </div>
+</nav>
+
+
+
+</body>
+</html>
